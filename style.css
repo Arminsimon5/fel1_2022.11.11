@@ -1,0 +1,10 @@
+body{
+    background-color: seashell;
+}
+input:required{
+    background-color: #ffffcc;
+}
+input:invalid{
+    color: red;
+    background-color: #FCCCCC;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adatbeviteli űrlap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="#" method="GET">
+    <fieldset>
+    <legend>Űrlap</legend>
+        <label for="megszolitas">Megszólitás: </label>
+        <select name="megszolitas" id="megszolitas">
+            <option value="1">doktor</option>
+            <option value="3">ifjabb</option>
+            <option value="2">idősebb</option>
+            <option value="4">özvegy</option>
+        </select><br>
+        <label for="nev">Név: </label>
+        <input type="text" id="nev" name="nev" maxlength="50" required><br>
+        <label for="jelszo">Jelszó: </label>
+        <input type="password" id="jelszo" name="jelszo" minlength="6" required><br>
+        <label for="nem">Nem: </label>
+        <select name="nem" id="nem">
+            <option value="1">férfi</option>
+            <option value="2">nő</option>
+        </select><br>
+        <label for="szuletesiDatum">Születési dátum: </label>
+        <input type="date" id="szuletesiDatum" name="szule1tesiDatum" min="1900-01-01"><br>
+        <label for="email">Email cím: </label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="hirlevel">Hírlevelet kérek: </label>
+        <input type="checkbox" id="hirlevel" name="hirlevel" required><br>
+        <label for="egyeb">Egyéb közlendő: </label>
+        <textarea name="egyeb" id="egyeb" cols="40" rows="5" ></textarea><br>
+        <button type="submit">Feldolgozás inditás</button>
+        <button type="reset">Adatok alaphelyzetbe állítása</button>
+    </fieldset>
+    </form>
+</body>
+</html>
